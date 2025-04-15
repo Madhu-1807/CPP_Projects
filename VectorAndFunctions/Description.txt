@@ -1,0 +1,36 @@
+
+- The program manages a list of integers and allows the user to perform different operations through a menu.
+- Menu options include:
+  - P – Print all numbers in the list.
+  - A – Add a number to the list.
+  - M – Calculate and display the mean of the numbers.
+  - S – Show the smallest number in the list.
+  - L – Show the largest number in the list.
+  - Q – Quit the program.
+
+- Both uppercase and lowercase inputs are accepted.
+- If the user enters an invalid option, the program displays an error message and shows the menu again.
+- For P:
+  - If the list is empty, it displays: "[] - the list is empty".
+  - If not, it displays the numbers inside square brackets, separated by spaces (e.g., `[ 1 2 3 ]`).
+
+- For A:
+  - The user is prompted to enter an integer.
+  - The number is added to the list.
+  - A confirmation message is shown (e.g., "5 added").
+  - Duplicate entries are allowed.
+
+- For M:
+  - If the list is not empty, it calculates and displays the mean.
+  - If the list is empty, it displays: "Unable to calculate the mean - no data".
+
+- For S:
+  - If the list is not empty, it finds and displays the smallest number.
+  - If the list is empty, it displays: "Unable to determine the smallest number - list is empty".
+
+- For L:
+  - If the list is not empty, it finds and displays the largest number.
+  - If the list is empty, it displays: "Unable to determine the largest number - list is empty".
+
+- For Q:
+  - The program displays "Goodbye" and exits.
