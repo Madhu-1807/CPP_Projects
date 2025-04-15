@@ -130,7 +130,6 @@ void handle_mean(const vector<int> &v) {
 /***************************************************************
 This function is called when the user selects the smallest 
 option from the main menu
-
 ***************************************************************/
 void handle_smallest(const vector<int> &v) {
      if (v.size() == 0)
@@ -142,7 +141,8 @@ void handle_smallest(const vector<int> &v) {
 /***************************************************************
 This function is called when the user selects the largest 
 option from the main menu
-
+Note that the parameter is a const reference parameter
+this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_largest(const vector<int> &v) {
      if (v.size() == 0)
@@ -154,7 +154,8 @@ void handle_largest(const vector<int> &v) {
 /***************************************************************
 This function is called when the user selects the find 
 option from the main menu
-
+Note that the parameter is a const reference parameter
+this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_find(const vector<int> &v) {
     int target{};
@@ -187,7 +188,8 @@ void handle_unknown() {
 /***************************************************************
 This function expects a list of integers as a vector
 and displays all the integers in the list in square brackets
-
+Note that the parameter is a const reference parameter
+this function should NOT modify the list of numbers
 ***************************************************************/
 void display_list(const vector<int> &v) {
     cout << "[ ";
@@ -199,7 +201,8 @@ void display_list(const vector<int> &v) {
 /***************************************************************
 This function expects a list of integers as a vector
 and returns the calculated mean
-
+Note that the parameter is a const reference parameter
+this function should NOT modify the list of numbers
 Note: the list must not be empty
 ***************************************************************/
 double calculate_mean(const vector<int> &v) {
@@ -244,6 +247,8 @@ for the given integer target
 If the target is found in the vector true is returned
 If the target is not found in the vector false is returned
 
+Note that the parameter is a const reference parameter
+this function should NOT modify the list of numbers
 ***************************************************************/
 bool find(const vector<int> &v, int target) {
     for (auto num: v)
