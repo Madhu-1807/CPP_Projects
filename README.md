@@ -1,4 +1,5 @@
-Welcome! This repository contains a collection of C++ projects I built to strengthen my understanding of object-oriented programming, efficient memory handling, and clean design principles.
+Welcome! This repository contains a collection of C++ projects.
+I built to strengthen my understanding of object-oriented programming, efficient memory handling, and clean design principles.
 
 Projects Included
 
