@@ -1,0 +1,37 @@
+Bank Account Management System
+
+This project is a simple object-oriented banking system simulation written in C++ . 
+It demonstrates core OOP concepts such as inheritance, polymorphism, interfaces, and exception handling 
+through the implementation of different types of bank accounts.
+
+Account Types:
+
+Savings_Account: 
+
+* Supports deposits with an interest rate. 
+* When a deposit is made, the interest is automatically calculated and added to the balance.
+
+Checking_Account: 
+
+* Allows balance checking and withdrawals, but charges a fixed fee for each transaction.
+
+Trust_Account: 
+
+Allows only 3 withdrawals.
+* Each withdrawal can be up to 20% of the current balance.
+* Eligible for a bonus when a deposit over a specified threshold is made.
+
+Interface:
+Printable: 
+* An interface that enforces the implementation of a print method. 
+* This method is overloaded in each account class to provide custom print behavior based on the account type.
+
+Exception Handling:
+
+* InsufficientFunds: Thrown when an account does not have enough balance for a withdrawal.
+* IllegalBalance: Thrown when a deposit or account action violates business rules, such as attempting to deposit a negative amount.
+
+Account Handler:
+
+* A dedicated class responsible for managing account operations such as deposits, withdrawals, balance checks, and printing account details. 
+* It ensures account constraints and exceptions are properly handled
